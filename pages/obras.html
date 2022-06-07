@@ -6,28 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obras</title>
     <link rel="shortcut icon" href="../images/logo.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style+boostrap.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
 </head>
 <body class="body">
-    
     <!-- HEADER -->
-
+    
     <header class="header">
         <div class="header__div">
-            <div class="header__div1">
+            <div class="header__div1 position-relative text-center p-3">
                 <img src="../images/logo.JPG" alt="logo">
             </div>
             <div class="header__div2">
-                <nav class="headerMenu">
-                    <h1 class="headerMenu__titulo">Menu</h1>
-                    <ul class="headerMenu-lista">
-                        <li class="headerMenu__item"><a href="../index.html">Home</a></li>
-                        <li class="headerMenu__item"><a href="./obras.html">Obras</a></li>
-                        <li class="headerMenu__item"><a href="./servicios.html">Servicios</a></li>
-                        <li class="headerMenu__item"><a href="./presupuestos.html">Presupuestos</a></li>
-                        <li class="headerMenu__item"><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+                <nav class="navbar navbar-expand-lg text-bg-secondary">
+                    <div class="container-fluid">
+                      <h1 class="navbar-text p-3">Menu </h1>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav ">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./obras.html">Obras</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./presupuestos.html">Presupuestos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
             </div>
         </div>
     </header>
@@ -57,12 +76,12 @@
     <hr>
 
     <!-- FOOTER -->
-
+    
     <footer class="footer">
-        <div class="footer__img">
-            <img src="../images/logo.JPG" alt="logo">
+        <div class="footer__img position-relative text-center img-fluid p-3">
+            <img src="../images/logo.JPG" alt="logo" >
         </div>
-        <nav class="footerNav">
+        <nav class="footerNav position-relative text-center">
             <div class="footerNav__a">
                 <a href="https://www.facebook.com/" class="footerNav_link">facebook</a>
                 <a href="" class="footerNav_link">|instagram</a>
@@ -75,5 +94,7 @@
         </nav>
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
