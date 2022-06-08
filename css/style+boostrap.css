@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header__div1 img {
+    transition: all 2s;
+}
+.sectionIndex__img {
+    transition: all 2s;
+}
+
 
 .sectionIndex__div2 {
     display: grid;
@@ -10,13 +22,6 @@
     width: 600px;
     height: 400px;
 }
-/* .sectionIndex__p {
-    font-size: large;
-    -ms-text-size-adjust: initial;
-    padding: 10px;
-    justify-self: start;
-    align-self: center;
-} */
 
 /* MAIN OBRAS */
 
@@ -29,7 +34,6 @@
     grid-template-rows: 100px;
     justify-items: start;
     align-items: center;
-    padding: 5px;
     font-size: x-large;
 }
 .sectionObras__1 {
@@ -50,11 +54,16 @@
     height: auto;
     transition: all 2s;
 }
-
+.sectionPresu_img {
+    width: 100%;
+    height: auto;
+    transition: all 2s;
+}
 /* TRANSICIONES */
 
 
-.headerMenu__item a:hover {
+.nav-item .nav-link:hover {
+    color: white;
     background-color: rgb(74, 61, 61);
     height: 50px;
 }
@@ -73,6 +82,13 @@
 .sectionObras_img:hover {
     transform: translate(20px,0px);
 }
+
+/* TRANSICIONES PRESUPUESTOS */
+
+.sectionPresu_img:hover {
+    transform: translate(20px,0px);
+}
+
 
 /* DISEÑO RESPONSIVE */
 

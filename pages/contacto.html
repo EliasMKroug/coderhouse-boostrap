@@ -6,99 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="../images/logo.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style+boostrap.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body class="body">
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="header">
-        <nav class="header__img">
-            <img src="../images/logo.JPG" alt="logo">
-        </nav>
-        <hr>
-        <nav class="headerMenu">
-            <h1 class="headerMenu__titulo">Menu</h1>
-            <ul class="headerMenu-lista">
-                <li class="headerMenu__item"><a href="../index.html">Home</a></li>
-                <li class="headerMenu__item"><a href="./obras.html">Obras</a></li>
-                <li class="headerMenu__item"><a href="./servicios.html">Servicios</a></li>
-                <li class="headerMenu__item"><a href="./presupuestos.html">Presupuestos</a></li>
-                <li class="headerMenu__item"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <hr>
-
-    <section class="section">
-        <h2 class="sectionTitle">Contacto</h2>
-        <article class="sectionArticle">
-            <form action="#" class="sectionArticle-form">
-                <div class="sectionArticle-form__div">
-                    <!-- Nombre -->
-                    <input type="text" placeholder="Nombre(*)" size="100" class="sectionArticle_inp">
-                    <!-- Asunto -->
-                    <input type="text" placeholder="Asunto (*)" size="100">
-                </div>
-                <!-- Nombre -->
-               <input type="text" placeholder="Nombre(*)" size="100" class="sectionArticle_inp">
-               <!-- Asunto -->
-               <input type="text" placeholder="Asunto (*)" size="100">
-               <!-- Email -->
-               <label for="email" class="sectionArticle_label">
-                   <p class="SectionContact__p">Ingrese email: </p>
-                   <input type="email" placeholder="aaa@gmail.com" name="email" size="100">            
-               </label>
-               <!-- Telefono -->
-               <label for="number" class="sectionArticle_label">
-                   <p class="SectionContact__p">Ingrese Telefono: </p>
-                   <input type="number" placeholder="Telefono de contacto" size="100">
-               </label>
-               <!-- Consulta -->
-               <label for="Consulta" class="sectionArticle_label">
-                   <p class="SectionContact__p">Dejanos su Consulta</p>
-                   <textarea name="Consulta" id="consulta" cols="30" rows="10"></textarea>
-               </label>
-               <br><br>
-               <!-- Radiobutton -->
-               <label for="Tipo de cliente" class="sectionArticle_label">
-                   Tipo de cliente:
-                   <br>
-                   <div class="sectionArticle_div">
-                        <p class="SectionContact__p">Empresa</p>
-                        <input type="radio" name="empresa" value="Empresa">
-                        <p class="SectionContact__p">Particular</p>
-                        <input type="radio" name="particular" value="Particular">
+        <div class="header__div">
+            <div class="header__div1 position-relative text-center p-3">
+                <img src="../images/logo.JPG" alt="logo">
+            </div>
+            <div class="header__div2">
+                <nav class="navbar navbar-expand-lg text-bg-secondary">
+                    <div class="container-fluid">
+                      <h1 class="navbar-text p-1">Menu </h1>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav ">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./obras.html">Obras</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./presupuestos.html">Presupuestos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-               </label>
-               <br><br>
-               <!-- Recibir Info -->
-               <div>
-                   <p class="SectionContact__p">¿Quieres recibir notificaciones sobre nosotros?</p>                    
-                   <input type="checkbox" name="acepto" value="1">
-               </div>
-               <br>
-               <input type="submit" value="Si">
-               <input type="reset" value="No">
-               <br><br>           
-
-            </form>
-        </article>
-    </section>
-
-    <hr>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__img">
-            <img src="../images/logo.JPG" alt="logo">
+                  </nav>
+            </div>
         </div>
-        <nav class="footerNav">
-            <a href="https://www.facebook.com/" class="footerNav_link">facebook</a>
-            <a href="" class="footerNav_link">|instagram</a>
-            <a href="" class="footerNav_link">|twitter</a>
-            <a href="" class="footerNav_link">|youtube</a>
-            <p class="footerNav_p">Steel Codes SRL 2012</p>
+    </header>
+    <!-- MAIN -->
+    <section class="section">
+        <h2 class="section__title text-start p-3">Contacto</h2>
+        <p class="form-label fs-6 p-1"> Cargue los siguientes datos y nos contactaremos en breve</p>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Nombre/Razon Social</span>
+            <input type="text" class="form-control" placeholder="Apellido y Nombre" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="email@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+          
+            <label for="basic-url" class="form-label p-1">Cargue su URL (opcional)</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text">Telefono</span>
+                <input type="text" placeholder="(011) XXXX-XXXX" class="form-control" aria-label="Telefono">
+            </div>
+            
+            <label for="basic-url" class="form-label p-2">Tipo de Presupuesto desea realizar</label>
+            <div class="input-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Particular</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Empresa</label>
+            </div>
+
+            <div class="text-center p-3">
+                <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" >
+                <label class="btn btn-primary p-3" for="btn-check">Enviar</label>
+            </div>
+            
+        </div>
+    </section>
+    <hr>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__img position-relative text-center img-fluid p-3">
+            <img src="../images/logo.JPG" alt="logo" >
+        </div>
+        <nav class="footerNav position-relative text-center">
+            <div class="footerNav__a">
+                <a href="https://www.facebook.com/" class="footerNav_link">facebook</a>
+                <a href="" class="footerNav_link">|instagram</a>
+                <a href="" class="footerNav_link">|twitter</a>
+                <a href="" class="footerNav_link">|youtube</a>
+            </div>
+            <div class="footerNav__p">
+                <p class="footerNav_p">Steel Codes SRL 2012</p>
+            </div>
         </nav>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
